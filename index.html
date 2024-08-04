@@ -5,67 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
     <style>
-        #outer{
-            background-color: rgb(61, 60, 60);
-            border: 5px solid black;
-            width: 100%;
+       *{
+        padding: 0;
+        margin: 0;
+       }
+       #navbar{
+        height:60px;
+        background-color: black;
+        border-width: 5px;
+        border-color:white;
+        border-style: solid;
+       }
+       #logo{
+        color: #f08804;
+        font-size: 25px;
+       }
+       a{
+            text-decoration: none;
+            margin-right: 200px;
+            color: white;
             
-        }
-        div{
-            float: left;
-        }
-        
-
-        #amazon h4{
-            color : red;
-            width: 120px;text-align: center;
-        }
-        #account h4{
-            color : white;
-            padding-left: 200px;
-        }
-        #mycart{
-            color: white;
-            padding-left: 200px;
-        }
-        #contact{
-            color: white;
-            padding-left: 200px;
-        }
-        #searchbar{
-            padding-left: 200px;
-            padding-top: 20px;
-        
-        }
-        #search{
-            padding-top: 20px;
-        }
-
+       }
+       a:hover{
+        color: #f08804;
+       }
+       button:hover{
+        color:red;
+       }
+       button{
+        background-color: #f08804;
+        color: white;
+       }
     </style>
 </head>
 <body>
-    <div id="outer">
-        <div id="amazon">
-            <h4>amazon.in</h4>
-        </div>
-        <div id="account" >
-            <h4>Account</h4>
-        </div>
-        <div id="mycart">
-            <h4>MyCart</h4>
-        </div>
-        <div id="contact">
-            <h4>Contact Us</h4>
-        </div>
-        <div id="searchbar">
-            <input type="text" placeholder="search Amazon.in">
-        </div>
-        <div id="search">
-            <button>search</button>
-
-        </div>
+    <div id="navbar">
+       <a id="logo" href="#">Amazon.in</a>
+       <a href="#">Account</a>
+       <a href="#">MyCart</a>
+       <a href="#">ContactUs</a>
+       <input type="text" placeholder="search amazon.in">
+       <button>search</button>
     </div>
 
-    </div>
+   
 </body>
 </html>
