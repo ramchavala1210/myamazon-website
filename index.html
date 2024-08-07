@@ -4,50 +4,198 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
-       *{
-        padding: 0;
-        margin: 0;
-       }
-       #navbar{
-        height:60px;
-        background-color: black;
-        border-width: 5px;
-        border-color:white;
-        border-style: solid;
-       }
-       #logo{
-        color: #f08804;
-        font-size: 25px;
-       }
-       a{
-            text-decoration: none;
-            margin-right: 200px;
+        *{
+            margin: 0px;
+            padding:0px;
+            border: border-box;
+            font-family: Arial,sans-serif;
+        }
+        /** border hover */
+
+         .border{
+            border:0.5px solid transparent;
+        }
+        .border:hover{
+            border:0.5px solid white;
+        }
+        /** navbar **/
+
+        .navbar{
+            height: 65px;
+            background-color:black;
             color: white;
+            width:100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        /** logo **/
+        .nav-logo{
+            height:50px;
+            width:115px;
+            padding-top: 9px;
+        }
+        .logo{
+            background-image: url(/Users/schavala/Documents/vscode1/HTML/amazon/PHOTO-2024-08-06-21-47-52.jpg);
+            background-size:cover;
+            height: 35px;
+            width: 115px;
             
-       }
-       a:hover{
-        color: #f08804;
-       }
-       button:hover{
-        color:red;
-       }
-       button{
-        background-color: #f08804;
-        color: white;
-       }
+        }
+        
+        /** locaton **/ 
+        .location{
+            height: 50px;
+            width:89px;
+            text-align: center;
+            padding-top: 9px;
+         }
+        .symbol-country{
+            display: flex;
+            justify-content: center;
+        }
+        .Deliver{
+            position: relative;
+            left: 6px;
+            font-size: 0.55rem;
+            padding-top: 5px;
+        }
+
+        /** search bar **/
+        .search-bar{
+            display: flex;
+            height: 40px;
+            width:850px;
+            border:none;
+        }
+        .select-all select{
+            height: 40px;
+            width:50px;
+            text-align: center;
+            background-color: #e6e6e6;
+            border: none;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        .search-button button{
+            height:40px;
+            width:50px;
+            background-color: rgb(222, 130, 10);
+            border: none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            font-size: large;
+        }
+        .search-input{
+            width:750px;
+            font-size: 1rem;
+            border: none;
+            padding:none;
+        }
+        .search-bar:hover{
+            border:2px solid orange;
+        }
+        /** Signin **/
+        .signin{
+            height: 50px;
+            width: 131px;
+            padding-top: 9px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        span{
+            font-size: 0.75rem;
+        }
+        .p1{
+            font-weight: 600;
+        }
+        /** returns & orders **/
+        .returns-order{
+            height: 50px;
+            padding-top: 9px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        /** Cart **/
+        .Cart{
+            height: 50px;
+            display: flex;
+            padding-top: 9px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .symbol{
+            font-size: 1.5rem;
+        }
+        .cart-symbol{
+            padding-top: 7px;
+
+        }
+
+
+
+       
     </style>
 </head>
 <body>
-    <div id="navbar">
-       <a id="logo" href="#">Amazon.in</a>
-       <a href="#">Account</a>
-       <a href="#">MyCart</a>
-       <a href="#">ContactUs</a>
-       <input type="text" placeholder="search amazon.in">
-       <button>search</button>
-    </div>
+    <header>
+        <div class="navbar">
+            <!--nav logo-->
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
 
-   
+            <!--location-->
+            <div class="location border">
+                <p class="Deliver">Deliver to</p>
+                <div class="symbol-country">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>India</p>
+                </div>
+            </div>
+
+            <!-- search bar-->
+            <div class="search-bar">
+                <div class="select-all">
+                    <select>
+                        <option>All</option>
+                    </select>
+                    
+                </div>
+                    <input type="text" placeholder="Search amazon" class="search-input">
+                <div class="search-button">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <!--Sign in-->
+            <div class="signin border">
+                <div class="sign">
+                    <span>Hello,sign in</span>
+                    <p class="p1">Accounts & Lists</p>
+                </div>
+            </div>
+
+            <!-- returns & orders-->
+            <div class="returns-order border">
+                <div class="return">
+                    <span>Returns</span>
+                    <p>&Orders</p>
+                </div>
+            </div>
+
+            <!--Cart-->
+            <div class="Cart border">
+                <div class="cart-symbol">
+                    <i class="fas fa-shopping-cart symbol" ></i>
+                    Cart
+                </div>
+            </div>
+
+        </div>
+    </header>
 </body>
 </html>
