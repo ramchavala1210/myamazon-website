@@ -5,143 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        *{
-            margin: 0px;
-            padding:0px;
-            border: border-box;
-            font-family: Arial,sans-serif;
-        }
-        /** border hover */
-
-         .border{
-            border:0.5px solid transparent;
-        }
-        .border:hover{
-            border:0.5px solid white;
-        }
-        /** navbar **/
-
-        .navbar{
-            height: 65px;
-            background-color:black;
-            color: white;
-            width:100%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        /** logo **/
-        .nav-logo{
-            height:50px;
-            width:115px;
-            padding-top: 9px;
-        }
-        .logo{
-            background-image: url(PHOTO-2024-08-06-21-47-52.jpg
-);
-            background-size:cover;
-            height: 35px;
-            width: 115px;
-            
-        }
-        
-        /** locaton **/ 
-        .location{
-            height: 50px;
-            width:89px;
-            text-align: center;
-            padding-top: 9px;
-         }
-        .symbol-country{
-            display: flex;
-            justify-content: center;
-        }
-        .Deliver{
-            position: relative;
-            left: 6px;
-            font-size: 0.55rem;
-            padding-top: 5px;
-        }
-
-        /** search bar **/
-        .search-bar{
-            display: flex;
-            height: 40px;
-            width:850px;
-            border:none;
-        }
-        .select-all select{
-            height: 40px;
-            width:50px;
-            text-align: center;
-            background-color: #e6e6e6;
-            border: none;
-            border-top-left-radius: 4px;
-            border-bottom-left-radius: 4px;
-        }
-        .search-button button{
-            height:40px;
-            width:50px;
-            background-color: rgb(222, 130, 10);
-            border: none;
-            border-top-right-radius: 4px;
-            border-bottom-right-radius: 4px;
-            font-size: large;
-        }
-        .search-input{
-            width:750px;
-            font-size: 1rem;
-            border: none;
-            padding:none;
-        }
-        .search-bar:hover{
-            border:2px solid orange;
-            border-radius:7px;
-        }
-        /** Signin **/
-        .signin{
-            height: 50px;
-            width: 131px;
-            padding-top: 9px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        span{
-            font-size: 0.75rem;
-        }
-        .p1{
-            font-weight: 600;
-        }
-        /** returns & orders **/
-        .returns-order{
-            height: 50px;
-            padding-top: 9px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-
-        /** Cart **/
-        .Cart{
-            height: 50px;
-            display: flex;
-            padding-top: 9px;
-            padding-left: 5px;
-            padding-right: 5px;
-        }
-        .symbol{
-            font-size: 1.5rem;
-        }
-        .cart-symbol{
-            padding-top: 7px;
-
-        }
-
-
-
-       
-    </style>
+    <link rel="stylesheet" href="/Users/schavala/Documents/vscode1/HTML/amazon/styles.css"/>
+    
 </head>
 <body>
     <header>
@@ -198,6 +63,137 @@
             </div>
 
         </div>
+
+        <!--nav-bar-2--> 
+        <div class="navbar-2">
+            <div class="options-all border">
+                <i class="fa-solid fa-bars "></i>
+                <p style="font-size: 14px; padding-left: 4px;">All</p>
+            </div>
+            <div class="bar">
+                <p class="bar2 border">Today's Deals</p>
+                <p class="bar2 border">Customer Service</p>
+                <p class="bar2 border">Registry</p>
+                <p class="bar2 border">Gift Cards</p>
+                <p class="bar2 border">Sell</p>
+            </div>
+        </div>
+        <!-- ----------------------------------- background iamge & boxes ------------------------------ -->
+         <div class="bgimage">
+            <div class="boxes">
+                
+                <div class="left-right-symbols">
+                    <div class="left-symbols">
+                        <i class="fa-solid fa-angle-left"></i>
+                    </div>
+                    <div class="right-symbol">
+                        <p><i id="101"class="fa-solid fa-angle-right"></i></p>
+                    </div>                    
+                </div>
+                <div class="box1">
+                    <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.<a href="#">Click here to go to amazon.in</a></p>
+                </div>
+                <div class="row1">
+                    <!------ box1 --------->
+                    <div class="r1b1 image-box">
+                        <h2 class="r1h2">Gaming accessories</h2>
+                        <div class="r1b1b1">
+                            <div class="r1img1">
+                                <img src="headsets.jpg" height="116px" width="157px">
+                                <p class="item-name">Headsets</p>
+                            </div>
+                            <div class="r1img2">
+                                <img src="keyboards.jpg" height="116px" width="157px">
+                                <p class="item-name">Keyboards</p>
+                            </div>
+                        </div>
+                        
+                        <div class="r1b1b2">
+                            <div class="r1img3">
+                                <img src="mouse.jpg" height="116px" width="157px">
+                                <p class="item-name">Computer nice</p>
+                            </div>
+                            <div class="r1img4">
+                                <img src="chairs.jpg" height="116px" width="157px">
+                                <p class="item-name">Chairs</p>
+                            </div>
+                        </div>
+                        <div class="seemore">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                    <!------ box2 --------->
+                    <div class="r1b2 image-box" >
+                       <h2 class="r1h2"> Refresh your space</h2>
+                       <div class="r1b1b1">
+                        <div class="r1img1" style="margin-right: 5px;">
+                            <img src="dining.jpg" height="116px" width="157px">
+                            <p class="item-name">Dining</p>
+                        </div>
+                        <div class="r1img2">
+                            <img src="home.jpg" height="116px" width="150px">
+                            <p class="item-name">Home</p>
+                        </div>
+                    </div>
+                    
+                    <div class="r1b1b2">
+                        <div class="r1img3">
+                            <img src="kitchen.jpg" height="116px" width="157px">
+                            <p class="item-name">Kitchen</p>
+                        </div>
+                        <div class="r1img4">
+                            <img src="health and beauty.jpg" height="116px" width="157px">
+                            <p class="item-name">Health and Beauty</p>
+                        </div>
+                    </div>
+                    <div class="seemore">
+                        <a href="#">See more</a>
+                    </div>
+                    </div>
+                    <!------ box3 --------->
+                    <div class="r1b3 image-box">
+                        <h2 class="r1h2">Shop deals in Fashion</h2>
+                        <div class="r1b1b1">
+                            <div class="r1img1">
+                                <img src="jeans.jpg" height="116px" width="157px">
+                                <p class="item-name">Jeans under $50</p>
+                            </div>
+                            <div class="r1img2">
+                                <img src="tops.jpg" height="116px" width="157px">
+                                <p class="item-name">Tops under $25</p>
+                            </div>
+                        </div>
+                        
+                        <div class="r1b1b2">
+                            <div class="r1img3">
+                                <img src="Dress.jpg" height="116px" width="157px">
+                                <p class="item-name">Dress under $30</p>
+                            </div>
+                            <div class="r1img4">
+                                <img src="shoes.jpg" height="116px" width="157px">
+                                <p class="item-name">Shoes under $50</p>
+                            </div>
+                        </div>
+                        <div class="seemore">
+                            <a href="#">See all deals</a>
+                        </div>
+                    </div>
+                    <!------ box4 --------->
+                    <div class="r1b4 image-box">
+                        <h2 class="r1h2">Deals in PCs</h2>
+                        <div>
+                            <img src="desktop.jpg" height="303px" width="330px">
+                        </div>
+                        <div class="seemore">
+                            <a href="#">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+         
+        
+         
     </header>
 </body>
 </html>
